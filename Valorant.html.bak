@@ -1,0 +1,113 @@
+<html>
+<head>
+<style>
+html {
+			   font-family: Arial, Helvetica, sans-serif;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  background-color: #BFEC89;	
+  padding:5px;
+}
+
+.flex-container div:hover {
+   text-decoration:none;
+   color: #005A9C;
+   background-color: #005A9C;
+}
+ 
+.flex-item {
+  text-align: center;
+  background-color: White;	
+  width: auto ;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  background-color: #BFEC89;
+  display: grid;
+  width: 100%px;
+  height:350px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 50px 305px; 
+  grid-template-areas:
+      "Header Header Header Header"
+      "Kakegurui SoloLeveling ChainsawMan BloomIntoYou";
+     
+}
+
+.Kakegurui {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Kakegurui;
+  background-color: white;
+ }
+.SoloLeveling {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: SoloLeveling;
+  background-color: white;
+ }
+.ChainsawMan {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: ChainsawMan;
+  background-color: white;
+ }
+.BloomIntoYou {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: BloomIntoYou;
+  background-color: white;
+ }
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  grid-area: Header;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 2500px ;
+  grid-template-columns: 447px ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr ; 	
+  grid-template-areas:
+
+	  
+}
+}	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header"> Valorant pro players<br>click picture to know about them</div>
+    <div class="Cned"><td><a href="https://youtu.be/rMMk6ZZH2xM"><img src="Cned.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+    <div class="SoloLeveling"><td><a href="https://youtube.com/shorts/nCl-sYGfjAE?feature=share"><img src="Tenz.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="ChainsawMan"><td><a href="https://youtu.be/XVgQfeqM4No"><img src="Scream.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="BloomIntoYou"><td><a href="https://youtu.be/ACD0bVu8BBg"><img src="Sinatraa.png" width=200 height=300 class=center bgcolor=white></a> </div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Home</a></div>
+   <div class="flex-item"><a href="Soccer players.html">My Best Soccer players</a></div>
+   <div class="flex-item"><a href="Valorant.html">The best Valorant pro players</a></div>
+ </div>   
+ <div class="flex-container">
+   <div class="flex-item"> <a href="Bikers.html">ProBikers</div> 
+</div>
+</body>
+</html>
